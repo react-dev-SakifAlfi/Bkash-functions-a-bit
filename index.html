@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>bKash</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- <div id="login-screen" class="screen">
+        <h1>Welcome Back To Bkash</h1>
+        <div class="login-form">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="login()">Login</button>
+        </div>
+    </div> -->
+    
+    <div class="app-container hidden">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#" onclick="showSection('dashboard')">Dashboard</a></li>
+                <li><a href="#" onclick="showSection('send-money')">Send Money</a></li>
+                <li><a href="#" onclick="showSection('phone-recharge')">Phone Recharge</a></li>
+                <li><a href="#" onclick="showSection('loan')">Loan</a></li>
+                <li><a href="#" onclick="logout()">Logout</a></li>
+            </ul>
+        </nav>
+        <div class="main-content">
+            <div id="dashboard" class="screen visible">
+                <h1>Welcome, <span id="user-name"></span></h1>
+                <div class="balance">
+                    <h2>Balance: <span id="balance">0</span> BDT</h2>
+                </div>
+            </div>
+            
+            
+                <div id="send-money" class="screen hidden">
+                    <h2>Send Money</h2>
+                    <input type="number" id="send-amount" placeholder="Enter amount">
+                    <button onclick="sendMoney()">Send</button>
+                </div>
+                
+                <div id="phone-recharge" class="screen hidden">
+                    <h2>Phone Recharge</h2>
+                    <input type="number" id="recharge-amount" placeholder="Enter amount">
+                    <button onclick="rechargePhone()">Recharge</button>
+                </div>
+                
+                <div id="loan" class="screen hidden">
+                    <h2>Loan</h2>
+                    <input type="number" id="loan-amount" placeholder="Enter amount">
+                    <button onclick="applyLoan()">Apply for Loan</button>
+                </div>
+            
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
